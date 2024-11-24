@@ -167,6 +167,8 @@ h3
 
 .section-title{
     font-size: 2.25rem;
+    /* margin-left: var(--m-0-75);
+    margin-bottom: var(--m-2-5); */
     margin-left: var(--m-0-75);
     margin-bottom: var(--m-2-5);
 }
@@ -344,7 +346,7 @@ color: var(--color-primary);
 .home .intro
 {
    
-    max-width: 400px;
+    max-width: 300px;
     text-align: center;
 }
 
@@ -1109,6 +1111,13 @@ max-height: 100%;
          max-width: 50%;
         
      }
+     .about-title {
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 2rem; /* Adjust size as needed */
+        font-weight: bold;
+    }
+    
      .about-content .about-text
      {
          margin-bottom: var(--m-1-5) ;
