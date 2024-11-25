@@ -374,6 +374,16 @@ color: var(--color-primary);
 {
     font-size: var(--h3-font-size);
 }
+a img {
+    width: 48px; /* or your desired size */
+    height: 48px;
+    display: inline-block;
+}
+
+a {
+    display: inline-block;
+    padding: 10px; /* Adjust padding to expand the clickable area */
+}
 
 
 @keyframes ani-mouse
@@ -1269,5 +1279,4 @@ button.btn {
 button.btn:hover {
     background-color: #ff6b81;
 }
-
 

@@ -139,14 +139,16 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     }
 
     // Send email via EmailJS
-    emailjs.send("service_ty0nlI8", "template_0dz0q3p", {
+    emailjs.send("service_ty0nll8", "template_0dz0q3p", {
         from_email: email,
         to_email: "malubamulebi@gmail.com",
         subject: subject,
         message: message,
     }).then(function(response) {
+        console.log("Success:", response);
         alert("Message sent successfully!");
     }, function(error) {
+        console.error("Failed:", error);
         alert("Failed to send message. Please try again later.");
     });
 });
