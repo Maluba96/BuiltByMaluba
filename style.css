@@ -1245,5 +1245,29 @@ max-height: 100%;
 }
 
 
+.contact-input {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.contact-content .contact-label {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+button.btn {
+    background-color: #ff4757;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.btn:hover {
+    background-color: #ff6b81;
+}
 
 

@@ -117,3 +117,36 @@ const navMenu = document.getElementById("nav-menu"),
             })
         
         }
+
+                // Initialize EmailJS
+(function() {
+    emailjs.init("U9s3bWAOcgiJKLPXx"); // Replace with your EmailJS user ID
+})();
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Get form values
+    const email = document.getElementById("email").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
+
+    // Validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        alert("Please enter a valid email address.");
+        return;
+    }
+
+    // Send email via EmailJS
+    emailjs.send("service_ty0nlI8", "template_0dz0q3p", {
+        from_email: email,
+        to_email: "malubamulebi@gmail.com",
+        subject: subject,
+        message: message,
+    }).then(function(response) {
+        alert("Message sent successfully!");
+    }, function(error) {
+        alert("Failed to send message. Please try again later.");
+    });
+});
